@@ -50,8 +50,6 @@ class FlyingObject:
             self.x += self.speed * elapsed_time * math.cos(self.angle)
             self.y += self.speed * elapsed_time * math.sin(self.angle)
             self.angle = math.atan2(self.y, self.x)
-        else:
-            pass
 
     def to_dict(self) -> Dict:
         return {
